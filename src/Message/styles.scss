@@ -1,0 +1,22 @@
+.Message {
+  &-confetti {
+    filter: hue-rotate(20deg);
+    transform: rotate(-45deg);
+  }
+
+  &-content {
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+  }
+
+  &-from {
+    font-size: 2rem;
+  }
+}
+
+body {
+  position: relative;
+  left: -3em;
+  top: -3em;
+  scale: 1.2;
+}
