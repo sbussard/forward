@@ -1,7 +1,7 @@
 .Message {
   &-confetti {
     filter: hue-rotate(20deg);
-    transform: rotate(-45deg);
+    transform: rotate(-90deg);
   }
 
   &-content {
@@ -17,6 +17,5 @@
 body {
   position: relative;
   left: -3em;
-  top: -3em;
   scale: 1.2;
 }

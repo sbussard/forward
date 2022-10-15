@@ -1,10 +1,9 @@
-import { useParams } from 'react-router-dom';
 import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
 import './styles.scss'
 
 export default () => {
-  const { base64To, base64From } = useParams<{ base64To: string, base64From: string }>();
+  const [base64To, base64From] = location.hash.slice(1).split(';');
   const { width, height } = useWindowSize();
 
   const to = atob(base64To!);
