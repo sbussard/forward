@@ -3,11 +3,10 @@ import Confetti from 'react-confetti'
 import './styles.scss'
 
 export default () => {
-  const [base64To, base64From] = location.hash.slice(1).split(';');
   const { width, height } = useWindowSize();
-
-  const to = atob(base64To!);
-  const from = atob(base64From!);
+  const [base64To, base64From] = location.hash.slice(1).split(';');
+  const to = window.atob(base64To).trim();
+  const from = window.atob(base64From).trim();
 
   return (
     <div className="Message">
